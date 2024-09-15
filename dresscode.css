@@ -236,6 +236,7 @@ audio {
 }
 
 #controlButton {
+  border-radius: 0px 10px 10px 0px;
   padding: 10px 20px;
   background-color: #c8a1e0be;
   color: white;
