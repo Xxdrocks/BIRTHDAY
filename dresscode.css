@@ -115,7 +115,7 @@
 }
 
 .logo-atas {
-  margin-top: -100px;
+  margin-top: 0px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -131,7 +131,7 @@
   font-family: "Cormorant Garamond", serif;
   font-weight: 100;
   font-style: normal;
-  margin-top: 150px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
