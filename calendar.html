@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>timeline</title>
+  <!-- css -->
+  <link rel="stylesheet" href="calendar.css" />
+
+  <!-- css end -->
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap"
+    rel="stylesheet" />
+  <!-- font end -->
+
+  <!-- aos animaiton -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- aos end -->
+</head>
+
+<body>
+  <button id="controlButton">Pause</button>
+  <section class="mantap">
+    <div class="navbar-container">
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="home.html"><img src="assets/logo.png" alt="Home Icon" class="nav-icon" /><span>Home</span></a>
+          </li>
+          <li>
+            <a href="calendar.html"><img src="assets/date.png" alt="Calendar Icon"
+                class="nav-icon" /><span>Calendar</span></a>
+          </li>
+          <li>
+            <a href="location.html"><img src="assets/map.png" alt="Location Icon"
+                class="nav-icon" /><span>Location</span></a>
+          </li>
+          
+          <li>
+            <a href="rsvp.html"><img src="assets/rsvp.png" alt="Timeline Icon" class="nav-icon" /><span>RSVP</span></a>
+          </li>
+          <li>
+            <a href="dresscode.html"><img src="assets/dress.png" alt="Dresscode Icon"
+                class="nav-icon" /><span>Dresscode</span></a>
+          </li>
+          <li>
+            <a href="submit.html"><img src="assets/wish.png" alt="Dresscode Icon"
+                class="nav-icon" /><span>Wish</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="video-background">
+      <video autoplay muted loop id="bg-video">
+        <source src="assets/bg.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="date">
+      <div class="top-logo">
+        <h1 data-aos="zoom-in-down" data-aos-duration="1500">
+          SAVE
+          <br />
+          <span data-aos="zoom-in-down" data-aos-duration="1400"> THE </span>
+          <br data-aos="zoom-in-down" data-aos-duration="1300" />DATE
+        </h1>
+      </div>
+      <div class="timeline" id="timeline">
+        <div data-aos="zoom-in-down" data-aos-duration="1300">
+          <span id="days">00</span>
+          <label>days</label>
+        </div>
+        <div data-aos="zoom-in-down" data-aos-duration="1500">
+          <span id="hours">00</span>
+          <label>hours</label>
+        </div>
+        <div data-aos="zoom-in-down" data-aos-duration="1700">
+          <span id="minutes">00</span>
+          <label>mins</label>
+        </div>
+        <div data-aos="zoom-in-down" data-aos-duration="1900">
+          <span id="seconds">00</span>
+          <label>secs</label>
+        </div>
+      </div>
+    </div>
+    <div class="calendarbutton" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1900">
+      <button type="button" onclick="openCalendar()">
+        <a href="https://calendar.google.com/calendar/u/0/share?slt=1AYBHKjqFrrLmhCXuPlGTyUAJtxi9_oiKDMbSnuzm5ojkyJzURIJcGmV8Tzf6xzQ7AoX-6PebWbXCUw" style="text-decoration: none">
+          <img src="assets/mail.png" alt="" />
+          ADD TO CALENDAR
+        </a>
+      </button>
+    </div>
+  </section>
+  <!-- js -->
+  <script src="calendar.js"></script>
+  <!-- end -->
+
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- aos -->
+
+  <!-- backsound -->
+  <audio id="audioPlayer" autoplay loop>
+    <source src="assets/backsound.mp3" type="audio/mpeg">
+  </audio>
+  <script src="backsound.js"></script>
+
+
+
+
+</body>
+
+</html>

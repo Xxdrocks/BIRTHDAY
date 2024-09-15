@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIRTHDAY PARTY</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="home.css" />
+
+    <!-- css end -->
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font end -->
+
+    <!-- aos animaiton -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- aos end -->
+  </head>
+  <body>
+    <button id="controlButton">Pause</button>
+
+    <div class="navbar-container">
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="home.html"
+              ><img
+                src="assets/logo.png"
+                alt="Home Icon"
+                class="nav-icon"
+              /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="calendar.html"
+              ><img
+                src="assets/date.png"
+                alt="Calendar Icon"
+                class="nav-icon"
+              /><span>Calendar</span></a
+            >
+          </li>
+          <li>
+            <a href="location.html"
+              ><img
+                src="assets/map.png"
+                alt="Location Icon"
+                class="nav-icon"
+              /><span>Location</span></a
+            >
+          </li>
+          
+          <li>
+            <a href="rsvp.html"
+              ><img
+                src="assets/rsvp.png"
+                alt="Timeline Icon"
+                class="nav-icon"
+              /><span>RSVP</span></a
+            >
+          </li>
+          <li>
+            <a href="dresscode.html"
+              ><img
+                src="assets/dress.png"
+                alt="Dresscode Icon"
+                class="nav-icon"
+              /><span>Dresscode</span></a
+            >
+          </li>
+          <li>
+            <a href="submit.html"
+              ><img
+                src="assets/wish.png"
+                alt="Dresscode Icon"
+                class="nav-icon"
+              /><span>Wish</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="awalan">
+      <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+          <source src="assets/bg.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay"></div>
+      </div>
+      <div
+        class="g"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1200"
+      >
+        <h1>G</h1>
+      </div>
+      <div class="logotext">
+        <p
+          style="font-size: 15px"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1200"
+        >
+          BIRTHDAY OF
+        </p>
+        <h1
+          data-aos="zoom-in-up"
+          data-aos-duration="1200"
+          data-aos-easing="linear"
+        >
+          G-Tya
+        </h1>
+       
+      </div>
+
+      <div
+        class="logobutton"
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      ></div>
+    </section>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- aos -->
+ 
+
+     <!-- backsound -->
+  <audio id="audioPlayer" autoplay loop>
+    <source src="assets/backsound.mp3" type="audio/mpeg">
+  </audio>
+  <script src="backsound.js"></script>
+  </body>
+</html>

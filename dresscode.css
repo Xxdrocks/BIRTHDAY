@@ -1,0 +1,245 @@
+:root {
+  --lilac: #beaee2;
+  --white: #f9f9f9;
+  --lightpink: #f7dbf0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+
+.navbar-container {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #c8a1e0;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.navbar {
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  border-radius: 0px;
+  position: relative;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.navbar li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #e2bbe9;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.navbar li:hover::before {
+  width: 150%;
+  height: 150%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 9px;
+}
+
+.navbar span {
+  font-size: 14px;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.logo-atas {
+  margin-top: -100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 20px;
+  color: #ffff;
+  text-shadow: 0px 0px 10px #f7c9ff;
+}
+
+.kotak-container {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100;
+  font-style: normal;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dalemkotak {
+  max-width: 270px;
+  height: 400px;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  scroll-snap-type: x mandatory;
+  position: relative;
+}
+
+.isikotak {
+  text-shadow: 0px 0px 10px #9a1cb0;
+  display: flex;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: white;
+
+}
+
+.kotak, .kotak1 {
+  width: 100%;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 20px 0px;
+  background-color: #c8a1e0be;
+  scroll-snap-align: start;
+  white-space: normal;
+}
+
+.kotak h1 {
+  margin-top: 10px;
+}
+
+.kotak h2 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.kotak p {
+  text-align: left;
+  margin: 10px;
+}
+
+.kotak1 p{
+  margin: 9px 0;
+
+}
+
+.kotak img {
+  width: 190px;
+  border-radius: 20px;
+}
+
+.kotak1 img {
+  width: 220px;
+}
+
+
+
+.palet img {
+  width: 320px;
+  height: auto;
+  margin-left: -20px;
+}
+.palet p {
+  margin-left: 30px;
+  width: 80%;
+  font-size: 10px;
+}
+.tanda {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.bulet {
+  z-index: 10;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.isikotak::-webkit-scrollbar {
+  display: none;
+}
+
+audio {
+  display: none;
+}
+
+#controlButton {
+  padding: 10px 20px;
+  background-color: #c8a1e0be;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}

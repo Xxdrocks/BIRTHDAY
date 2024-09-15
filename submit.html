@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIRTHDAY PARTY</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="submit.css" />
+
+  <!-- css end -->
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- font end -->
+
+  <!-- aos animaiton -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- aos end -->
+</head>
+
+<body>
+  <button id="controlButton">Pause</button>
+
+  <div class="navbar-container">
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="home.html"><img src="assets/logo.png" alt="Home Icon" class="nav-icon" /><span>Home</span></a>
+        </li>
+        <li>
+          <a href="calendar.html"><img src="assets/date.png" alt="Calendar Icon"
+              class="nav-icon" /><span>Calendar</span></a>
+        </li>
+        <li>
+          <a href="location.html"><img src="assets/map.png" alt="Location Icon"
+              class="nav-icon" /><span>Location</span></a>
+        </li>
+        
+        <li>
+          <a href="rsvp.html"><img src="assets/rsvp.png" alt="Timeline Icon" class="nav-icon" /><span>RSVP</span></a>
+        </li>
+        <li>
+          <a href="dresscode.html"><img src="assets/dress.png" alt="Dresscode Icon"
+              class="nav-icon" /><span>Dresscode</span></a>
+        </li>
+        <li>
+          <a href="submit.html"><img src="assets/wish.png" alt="Dresscode Icon" class="nav-icon" /><span>Wish</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="awalan">
+    <div class="video-background">
+      <video autoplay muted loop id="bg-video">
+        <source src="assets/bg2.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay"></div>
+    </div>
+
+    <div class="logo-wish" style="margin-bottom: -5px;">
+      <h1>ALL WISH</h1>
+    </div>
+    <div class="wish-content">
+
+      <div class="wish-box" style="margin-top: 110px;">
+        <img src="assets/Avatar/avatar (1).png" alt="">
+        <p>Andi: "Selamat ulang tahun! Semoga panjang umur dan selalu bahagia." </p>
+      </div>
+      <div class="wish-box">
+        <img src="assets/Avatar/avatar (2).png" alt="">
+        <p>Budi: "Semoga semua impianmu terwujud di tahun yang baru ini. Selamat ulang tahun!"</p>
+      </div>
+      <div class="wish-box">
+        <img src="assets/Avatar/avatar (3).png" alt="">
+        <p>Citra: "Hari spesialmu tiba lagi, semoga dipenuhi dengan cinta dan tawa. Selamat ulang tahun!"
+        </p>
+      </div>
+      <div class="wish-box">
+        <img src="assets/Avatar/avatar (4).png" alt="">
+        <p>Dewi: "Semoga ulang tahunmu membawa kebahagiaan yang tak terhingga. Selamat ulang tahun!"
+        </p>
+      </div>
+      <div class="wish-box">
+        <img src="assets/Avatar/avatar (5).png" alt="">
+        <p>Eka: "Selamat ulang tahun! Semoga selalu sehat dan sukses."
+        </p>
+      </div>
+    </div>
+    <div class="bawahan" style="margin-top: -5px;">
+
+    </div>
+  </section>
+
+
+  <!-- backsound -->
+  <audio id="audioPlayer" autoplay loop>
+    <source src="assets/backsound.mp3" type="audio/mpeg">
+  </audio>
+  <script src="backsound.js"></script>
+</body>
+
+</html>

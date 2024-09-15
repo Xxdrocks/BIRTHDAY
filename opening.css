@@ -1,0 +1,164 @@
+@media screen {
+  
+}
+
+:root {
+    --lilac: #beaee2;
+    --white: #f9f9f9;
+    --lightpink: #f7dbf0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  #bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.615);
+    z-index: -1;
+  }
+  
+.g {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  color: #ffff;
+  text-shadow: 0px 0px 20px #db82eb;
+
+}
+
+.g:hover {
+  text-shadow: 0px 0px 20px #f7dbf0c9;
+  transition: 0.3s ease-in-out;
+}
+
+
+.logotext {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffff  ;
+}
+
+.logotext h1 {
+  text-shadow: 0px 0px 20px #db82eb;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+}
+
+.logotext p {
+  text-shadow: 0px 0px 20px #db82eb;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-style: normal;
+}
+  .logobutton {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logobutton img {
+    width: 19px;
+    margin-right: 9px;
+  }
+
+  .logobutton button a {
+    color: #ad88c6;
+  }
+  
+  .logobutton button a:hover {
+    color: #ffff;
+    transition: 0.3s linear;
+  }
+  
+
+  
+  .logobutton button {
+    text-decoration: none;
+    border: none;
+    text-shadow: 2px 2px 20px #f7dbf0e7;
+    margin-top: 30px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffffffaf;
+    outline: 2px solid var(--lightpink);
+    font-size: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .logobutton button:hover {
+    transform: translateY(-20%);
+    box-shadow: 0px 0px 20px 10px #ad88c6;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    -webkit-transform: translateY(-20%);
+    -moz-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
+  }
+  
+  audio {
+    display: none;
+  }
+  
+  #controlButton {
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px 10px;
+    background-color: #c8a1e0be;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  #controlButton:hover {
+    box-shadow: 0px 0px 20px 10px #ffffffaf;
+  }

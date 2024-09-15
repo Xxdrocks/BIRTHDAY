@@ -1,0 +1,222 @@
+:root {
+  --lilac: #beaee2;
+  --white: #f9f9f9;
+  --lightpink: #f7dbf0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+
+.navbar-container {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #c8a1e0;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.navbar {
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  border-radius: 0px;
+  position: relative;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.navbar li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #e2bbe9;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.navbar li:hover::before {
+  width: 150%;
+  height: 150%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 9px;
+}
+
+.navbar span {
+  font-size: 14px;
+}
+.date {
+  text-align: center;
+  margin-top: 30%;
+}
+
+.top-logo {
+  text-shadow: 2px 2px 20px #0000;
+  font-family: "Sedan SC", serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #ffff;
+  font-size: 25px;
+  text-shadow: 30px 30px 30px #b68bf3;
+}
+
+.top-logo span {
+  font-size: 17px;
+}
+
+.timeline {
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20%;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.timeline div {
+  background: #694f8e6b;
+  box-shadow: 0px 0px 20px 10px #f7dbf06c;
+  padding: 7px;
+  border-radius: 10px;
+  min-width: 60px;
+}
+
+.timeline div span {
+  margin-bottom: 7px;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.calendarbutton {
+  display: flex;
+  justify-content: center;
+}
+
+.calendarbutton img {
+  width: 19px;
+  margin-right: 5px;
+}
+
+.calendarbutton button {
+  text-decoration: none;
+  border: none;
+  text-shadow: 2px 2px 20px #f7dbf0e7;
+  margin-top: 50px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffffffaf;
+  outline: 2px solid var(--lightpink);
+  font-size: 13px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  cursor: pointer;
+}
+
+.calendarbutton a {
+  color: #000000;
+  align-items: center;
+  display: flex;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.calendarbutton button:hover {
+  transform: translateY(-20%);
+  box-shadow: 0px 0px 20px 10px #f7dbf06c;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -webkit-transform: translateY(-20%);
+  -moz-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  -o-transform: translateY(-20%);
+}
+/* BUTTON END */
+
+audio {
+  display: none;
+}
+
+#controlButton {
+  border-radius: 0px 10px 10px 0px;
+  padding: 10px 10px;
+  background-color: #c8a1e0be;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#controlButton:hover {
+  box-shadow: 0px 0px 20px 10px #ffffffaf;
+}
