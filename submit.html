@@ -68,14 +68,12 @@
       <h1>ALL WISH</h1>
     </div>
     <div class="wish-content">
-
-      <div class="wish-box" style="margin-top: 110px;">
-        <img src="assets/Avatar/avatar (1).png" alt="">
-        <p>Andi: "Selamat ulang tahun! Semoga panjang umur dan selalu bahagia." </p>
-      </div>
-      <div class="wish-box">
-        <img src="assets/Avatar/avatar (2).png" alt="">
-        <p>Budi: "Semoga semua impianmu terwujud di tahun yang baru ini. Selamat ulang tahun!"</p>
+      <div class="form-section">
+        <form id="wishForm">
+          <input type="text" id="name" placeholder="Nama Anda" required />
+          <textarea id="message" placeholder="Masukkan ucapan" required></textarea>
+          <button type="submit">Kirim</button>
+        </form>
       </div>
       <div class="wish-box">
         <img src="assets/Avatar/avatar (3).png" alt="">
@@ -86,15 +84,8 @@
         <img src="assets/Avatar/avatar (4).png" alt="">
         <p>Dewi: "Semoga ulang tahunmu membawa kebahagiaan yang tak terhingga. Selamat ulang tahun!"
         </p>
-      </div>
-      <div class="wish-box">
-        <img src="assets/Avatar/avatar (5).png" alt="">
-        <p>Eka: "Selamat ulang tahun! Semoga selalu sehat dan sukses."
-        </p>
-      </div>
-    </div>
-    <div class="bawahan" style="margin-top: -5px;">
-
+      </div> 
+      
     </div>
   </section>
 
@@ -104,6 +95,10 @@
     <source src="assets/backsound.mp3" type="audio/mpeg">
   </audio>
   <script src="backsound.js"></script>
+
+  <!-- backsound end -->
+
+  <script src="submit.js"></script>
 </body>
 
 </html>
