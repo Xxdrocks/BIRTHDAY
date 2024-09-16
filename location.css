@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 .navbar-container {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
