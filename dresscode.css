@@ -194,13 +194,15 @@ body {
 
 }
 
+/* 
 .kotak img {
  width: 220px;
-  height: 400px;
-}
+} */
 
 .kotak1 img {
   width: 220px;
+    height: 400px;
+
 }
 
 
