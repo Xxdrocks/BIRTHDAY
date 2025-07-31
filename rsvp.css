@@ -144,6 +144,18 @@ root {
     border-radius: 30px;
   }
 
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .barcode {
+      text-align: center;
+      width: 100%;
+    }
+
+    .barcode img {
+      display: flex;
+      left: 50rem ;
+    }
+  }
+
   .barcode img {
     width: 200px;
     margin-left: 25px;
